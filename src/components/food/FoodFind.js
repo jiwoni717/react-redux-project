@@ -63,8 +63,7 @@ function Find(){
                         <td>
                             <input type={"text"} className={"input-sm"}
                                    size={"25"} value={address} onChange={findChange}/>
-                            <input type={"button"} className={"btn btn-sm btn-primary"}
-                                   value={"검색"} />
+                            <input type={"button"} className={"btn btn-sm btn-default"} value={"검색"} style={{"marginLeft":"5px"}}/>
                         </td>
                     </tr>
                 </table>
