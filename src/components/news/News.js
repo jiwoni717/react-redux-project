@@ -1,6 +1,6 @@
 import {Fragment, useState, useEffect} from "react";
 import axios from "axios";
-import {fetchNewsData} from "../../actions/foodActions";
+import {fetchNews, fetchNewsData} from "../../actions/foodActions";
 import {useDispatch, useSelector} from "react-redux";
 
 function News(){
@@ -9,7 +9,7 @@ function News(){
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(fetchNewsData(fd))
+        dispatch(fetchNews(fd))
     }, []);
 
     const newsList = useSelector((state)=>state.foods.news_data)
@@ -19,7 +19,7 @@ function News(){
     }
 
     const findBtn=()=>{
-        dispatch(fetchNewsData(fd))
+        dispatch(fetchNews(fd))
     }
 
     let html = newsList.map((news)=>

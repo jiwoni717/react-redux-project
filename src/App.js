@@ -8,6 +8,7 @@ import store from './store/store'
 import FoodList from "./components/food/FoodList";
 import FoodDetail from "./components/food/FoodDetail";
 import News from "./components/news/News";
+import FoodFind from "./components/food/FoodFind";
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
                   <Route exact path={"/food/food_list/:cno"} element={<FoodList/>}/>
                   <Route exact path={"/food/food_detail/:fno"} element={<FoodDetail/>}/>
                   <Route exact path={"/news/news_find"} element={<News/>}/>
-                  {/*<Route exact path={"/food/food_find"} element={<FoodFind/>}/>
-                  <Route exact path={"/seoul/location"} element={<Location/>}/>
+                  <Route exact path={"/food/food_find"} element={<FoodFind/>}/>
+                  {/*<Route exact path={"/seoul/location"} element={<Location/>}/>
                   <Route exact path={"/seoul/nature"} element={<Nature/>}/>
                   <Route exact path={"/seoul/shop"} element={<Shop/>}/>
                   */}

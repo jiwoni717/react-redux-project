@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-project",
+  "name": "react-redux-project2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,8 @@
     "redux-logger": "^3.0.6",
     "redux": "^4.2.1",
     "redux-devtools-extension": "^2.13.9",
-    "@reduxjs/toolkit": "^1.9.5"
+    "@reduxjs/toolkit": "^1.9.5",
+    "react-js-pagination": "^3.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
